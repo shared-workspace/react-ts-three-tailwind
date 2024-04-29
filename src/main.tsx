@@ -1,13 +1,10 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
+import Routing from "./Routing";
 import './index.css'
-import { DarkModeContextProvider } from './contexts/darktheme.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <DarkModeContextProvider>
-      <App />
-    </DarkModeContextProvider>
-  </React.StrictMode>,
+    // <React.StrictMode>
+        <Routing />
+    // </React.StrictMode>,
 )
